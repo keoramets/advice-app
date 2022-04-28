@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background: hsl(218, 23%, 16%);
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 2rem 2rem 4rem 2rem;
+    margin: 0;
+    border-radius: 20px;
+    background: hsl(217, 19%, 24%);
+}
+
+.card .advice-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card h1 {
+    color: hsl(193, 38%, 86%);
+    margin: 2rem 0;
+    font-size: 12px;
+}
+
+.card span {
+    font-size: 16px;
+    color: hsl(150, 100%, 66%);
+}
+
+.card .img-dice {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: -10%;
+    border-radius: 50%;
+    background: hsl(150, 100%, 66%);
+}
+
+.card .img-dice:hover {
+    box-shadow: 0 0 25px hsl(150, 100%, 66%);
+}
+
+@media only screen and (min-width: 375px)  {
+    .card {
+        max-width: 300px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        max-width: 600px;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+}
+
+
+
+.attribution { 
+    font-size: 14px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+.attribution a { 
+    color: hsl(150, 100%, 66%); 
+}
